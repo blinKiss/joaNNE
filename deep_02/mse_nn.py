@@ -1,7 +1,6 @@
 from tensorflow import keras
 
-mse_model = keras.Sequential([keras.layers.Dense(units=3, 
-                                                 input_shape=[1])])
+mse_model = keras.Sequential([keras.layers.Dense(units=3, input_shape=[1])])
 
 #mse 설정
 mse_model.compile(loss='mse') #mean_squared_error 동일-약어

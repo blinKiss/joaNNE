@@ -1,7 +1,6 @@
 from tensorflow import keras
 
-opt_model = keras.Sequential([keras.layers.Dense(units=3, 
-                                                 input_shape=[1])])
+opt_model = keras.Sequential([keras.layers.Dense(units=3, input_shape=[1])])
 
 # 손실, 최적화함수 적용
 opt_model.compile(loss='mse', optimizer='sgd')
