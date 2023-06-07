@@ -6,7 +6,7 @@ tf.random.set_seed(0)
 
 x_train = np.array([[1,0,0], [0,1,1], [0,0,1]]) # 입력값이 3개 훈련데이터
 
-# 모델을 만들기 전에 뉴런층을 정희
+# 모델을 만들기 전에 뉴런층을 정의
 input_layer = tf.keras.layers.InputLayer(input_shape=(3,))
 hidden_layer = tf.keras.layers.Dense(units=4, activation='relu')
 output_layer = tf.keras.layers.Dense(units=2, activation='softmax')
